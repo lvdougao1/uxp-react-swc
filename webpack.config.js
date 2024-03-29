@@ -51,5 +51,9 @@ module.exports = {
   watchOptions: {
     // ignored: /node_modules/,
   },
-  devtool: 'eval-cheap-source-map'
+  devtool: 'eval-cheap-source-map',
+  devServer: {
+    allowedHosts: "all",
+  }
+
 };
