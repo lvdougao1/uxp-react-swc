@@ -1,0 +1,119 @@
+{
+  "manifestVersion": 5,
+  "name": "comfyui plugin",
+  "version": "1.0.0",
+  "host": {
+    "app": "PS",
+    "minVersion": "24.4",
+    "data":{
+      "loadEvent": "use",
+      "apiVersion": 2,
+      "enableMenuRecording": true
+    }
+  },
+  "featureFlags": {
+    "enableSWCSupport": true
+  }, 
+  "main": "index.html",
+  "entrypoints": [
+    {
+      "id": "comfyui-plugin",
+      "label": {
+        "default": "comfyui plugin panel"
+      },
+      "type": "panel",
+      "minimumSize": {
+        "width": 320,
+        "height": 320
+      },
+      "maximumSize": {
+        "width": 1000,
+        "height": 1000
+      },
+      "preferredDockedSize": {
+        "width": 320,
+        "height": 570
+      },
+      "preferredFloatingSize": {
+        "width": 320,
+        "height": 570
+      },
+      "icons": [
+        {
+          "width": 32,
+          "height": 32,
+          "path": "icons/icon_D.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "dark",
+            "darkest"
+          ],
+          "species": [
+            "generic"
+          ]
+        },
+        {
+          "width": 32,
+          "height": 32,
+          "path": "icons/icon_N.png",
+          "scale": [
+            1,
+            2
+          ],
+          "theme": [
+            "lightest",
+            "light"
+          ],
+          "species": [
+            "generic"
+          ]
+        }
+      ]
+    }
+  ],
+  "id": "chuizi-comfyui-plugin",
+  "icons": [
+    {
+      "width": 32,
+      "height": 32,
+      "path": "icons/icon_D.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "dark",
+        "darkest"
+      ],
+      "species": [
+        "generic"
+      ]
+    },
+    {
+      "width": 32,
+      "height": 32,
+      "path": "icons/icon_N.png",
+      "scale": [
+        1,
+        2
+      ],
+      "theme": [
+        "lightest",
+        "light"
+      ],
+      "species": [
+        "generic"
+      ]
+    }
+  ],
+  "requiredPermissions": {
+    "clipboard": "readAndWrite",
+    "network": {
+      "domains": "all"
+    },
+    "allowCodeGenerationFromStrings": true
+  }
+}
